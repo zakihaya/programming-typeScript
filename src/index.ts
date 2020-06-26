@@ -9,7 +9,18 @@ let c = {
 let d = c.apple * 4
 
 let h: {[key: string]: number} = {}
-h['test'] = 100
-// h['test2'] = 'a'  // Type '"a"' is not assignable to type 'number'.
-console.log(h['test'])
-console.log(h['test2'])
+h.test = 100
+h[3] = 4  // Type '"a"' is not assignable to type 'number'.
+console.log(h.test)
+console.log(h.test2)
+
+type Color = string
+const red: Color = 'red'
+console.log(red)
+
+let l: unknown
+l = 1
+if (typeof l === 'number') {
+  const m = l * 2
+  console.log(m)
+}
