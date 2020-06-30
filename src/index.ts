@@ -14,8 +14,8 @@ h[3] = 4  // Type '"a"' is not assignable to type 'number'.
 console.log(h.test)
 console.log(h.test2)
 
-type Color = string
-const red: Color = 'red'
+type ColorVal = string
+const red: ColorVal = 'red'
 console.log(red)
 
 let l: unknown
